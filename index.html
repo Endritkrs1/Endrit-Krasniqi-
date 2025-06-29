@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Verstappen - F1 Champion</title>
+  <!-- Tailwind & DaisyUI -->
+  <link href="./src/style/output.css" rel="stylesheet" />
+  <link href="./src/style/style.css" rel="stylesheet" />
+  <script src="./src/script/calculatrice.js"></script>
+  <script src="./src/script/questionnaire.js"></script>
+</head>
+<body class="bg-base-200">
+  <!-- Navbar -->
+  <div class="navbar bg-primary text-primary-content px-6">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl">Max Verstappen</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#career">Carrière</a></li>
+        <li><a href="#records">Records</a></li>
+        <li><a><label for="my_modal_7" class="cursor-pointer text-sm/6 font-semibold bg-transparent border-none p-0">Calculatrice</label></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero min-h-screen" style="background-image: url('./src/img/hero.webp');">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Max Verstappen</h1>
+        <p class="mb-5">À pleine vitesse vers la légende, il a revolutionné la F1</p>
+        <a href="#about" class="btn btn-primary">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">À propos</h2>
+      <div class="flex flex-col md:flex-row gap-6">
+        <img src="./src/img/portrait.jpg" alt="Portrait Max Verstappen" class="w-full md:w-1/3 rounded-lg shadow-lg" />
+        <p class="text-lg leading-relaxed">
+            Max Emilian Verstappen est né le 30 septembre 1997 à Hasselt, en Belgique, dans une famille passionnée de sport automobile. Très vite, il suit les traces de son père, l’ancien pilote Jos Verstappen, et devient un prodige du karting dès l’âge de six ans, remportant de nombreux titres nationaux et internationaux. En 2014, il intègre la filière Red Bull junior team, enchaîne les succès en Formule 3 et termine champion de la catégorie en 2014. Il a choisi la nationalité hollandaise. 
+          </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Highlights -->
+  <section id="career" class="py-16 px-6 bg-base-100">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Carrière et Grandes Victoires</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title">2016 - GP d'Espagne</h3>
+            <p>Première victoire en Formule 1 (Grand Prix d'Espagne) à 18 ans, record du plus jeune vainqueur.</p>
+          </div>
+        </div>
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title">2021 - Champion du monde</h3>
+            <p>Premier titre mondial obtenu après une lutte intense contre Lewis Hamilton.</p>
+          </div>
+        </div>
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title">2022 & 2023 - Titres consécutifs</h3>
+            <p>Défend avec succès son titre en 2022 et 2023, établissant la domination de Red Bull.</p>
+          </div>
+        </div>
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title">2024 - Saison record</h3>
+            <p>Réalisation du plus grand nombre de poles positions sur une saison (20).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Records Section -->
+  <section id="records" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Records</h2>
+      <ul class="list-disc list-inside text-lg space-y-2">
+        <li>Plus jeune pilote à obtenir des points (2015, GP de Malaisie).</li>
+        <li>Plus jeune pilote à remporter un GP (2016).</li>
+        <li>Plus grand nombre de victoires consécutives dans une saison (11 en 2023).</li>
+        <li>Plus grand nombre de poles positions en une saison (20 en 2024).</li>
+        <li>Première victoire de Red Bull aux Monoplaces de Monaco (2021).</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="flex flex-col isolate h-screen w-screen items-center bg-base-100" id="contact">
+    <h1 class="text-5xl font-semibold tracking-tight text-balance sm:text-6xl text-center mt-24">Me contacter</h1>
+    <h2 class="text-2xl mt-2 mb-8 text-center">Pour pouvoir me contacter, je dois verifier que vous avez bien inspecté le site, en répondant à ce questionnaire</h2>
+    <div id="divquest" class="flex flex-col bg-white p-6 rounded-lg shadow-lg max-w-md w-full mt-12">
+      <h1 class="text-2xl font-bold mb-4 text-center text-gray-700">Questionnaire</h1>
+      <div id="question" class="text-xl font-bold mb-4 text-center text-gray-700">En quelle année Max Verstappen est-il né ?</div>
+        <div id="reponses" class="flex flex-col space-y-2"><button class="btn btn-primary">1995</button><button class="btn btn-primary">1996</button><button class="btn btn-primary">1997</button><button class="btn btn-primary">1998</button></div>
+      <button id="bruteforce-btn" class="cursor-pointer transition active:scale-110 rounded-md mt-2 bg-red-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-red-700 focus:shadow-none active:bg-red-700 hover:bg-red-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none " onclick="bruteforce(this)">Bruteforce 👨&zwj;💻</button>
+      <span id="spinner" class="loading loading-spinner text-neutral hidden loading-xl mb-4"></span>
+      <div id="result" class="text-lg text-red-700 text-center"></div>
+      <div id="countdown" class="text-lg text-green-600"></div>
+    
+    </div>
+    
+    
+    
+  </div>
+
+  <!-- Calculatrice -->
+  <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+  <div class="modal backdrop-blur-sm" role="dialog">
+    <div class="modal-box flex p-0 w-auto h-auto">
+      <div class="bg-base-100 p-6 rounded-lg shadow-lg text-center space-y-4 w-64" id="calculatrice">
+        <h2 class="text-xl font-semibold text-black-700">Calculatrice</h2>
+    
+        <p id="resultat" class="text-2xl font-bold bg-gray-100 p-3 rounded-lg text-right text-black">0</p>
+    
+        <div class="grid grid-cols-4 gap-2">
+          <button class="btn btn-outline btn-number" data-value="7">7</button>
+          <button class="btn btn-outline btn-number" data-value="8">8</button>
+          <button class="btn btn-outline btn-number" data-value="9">9</button>
+          <button class="btn btn-secondary btn-operator" data-value="+">+</button>
+    
+          <button class="btn btn-outline btn-number" data-value="4">4</button>
+          <button class="btn btn-outline btn-number" data-value="5">5</button>
+          <button class="btn btn-outline btn-number" data-value="6">6</button>
+          <button class="btn btn-secondary btn-operator" data-value="-">-</button>
+    
+          <button class="btn btn-outline btn-number" data-value="1">1</button>
+          <button class="btn btn-outline btn-number" data-value="2">2</button>
+          <button class="btn btn-outline btn-number" data-value="3">3</button>
+          <button class="btn btn-secondary btn-operator" data-value="*">*</button>
+    
+          <button class="btn btn-outline btn-number" data-value="0">0</button>
+          <button class="btn btn-error col-span-3" id="btn-clear">C</button>
+    
+          <button class="btn btn-success col-span-4" id="btn-equal">=</button>
+        </div>
+      </div>
+    </div>
+    
+    <label class="modal-backdrop" for="my_modal_7">Close</label>
+  </div>
+
+  <script>
+
+
+  
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const index = parseInt(btn.dataset.index);
+        const itemWidth = carousel.clientWidth;
+        carousel.scrollTo({
+          left: index * itemWidth,
+          behavior: "smooth"
+        });
+      });
+    });
+
+    const openBtn = document.getElementById('openMenu');
+    const closeBtn = document.getElementById('closeMenu');
+    const backdrop = document.getElementById('backdrop');
+    const mobileMenu1 = document.getElementById('mobileMenu');
+
+    openBtn.addEventListener('click', () => {
+      mobileMenu1.classList.remove('translate-x-full');
+      mobileMenu1.classList.add('translate-x-0');
+
+      backdrop.classList.remove('opacity-0', 'pointer-events-none');
+      backdrop.classList.add('opacity-100');
+    });
+
+    closeBtn.addEventListener('click', () => {
+
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+      backdrop.classList.remove('opacity-100');
+      mobileMenu1.classList.remove('translate-x-0');
+      mobileMenu1.classList.add('translate-x-full');
+    });
+
+
+    // Ferme le menu quand un lien du menu mobile est cliqué
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu1.classList.remove('translate-x-0');
+        mobileMenu1.classList.add('translate-x-full');
+      });
+    });
+    // Ferme le menu si on clique sur le label de la calculatrice dans le menu mobile
+    const calcLabel = document.querySelector('#mobileMenu label[for="my_modal_7"]');
+
+    if (calcLabel) {
+      calcLabel.addEventListener('click', () => {
+        mobileMenu1.classList.remove('translate-x-0');
+        mobileMenu1.classList.add('translate-x-full');
+      });
+    }
+
+    // Ferme aussi quand on clique sur le backdrop
+    backdrop.addEventListener('click', () => {
+      closeBtn.click();
+    });
+
+  
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-6 bg-primary text-primary-content">
+    <div>
+      <p>Site créé avec Tailwind CSS & DaisyUI par Endrit Krasniqi</p>
+      <p>&copy; 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
+
